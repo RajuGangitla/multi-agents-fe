@@ -7,6 +7,7 @@ import { taskSchema } from "./data/schema"
 import { UserNav } from "./components/user-nav"
 import { DataTable } from "./components/data-table"
 import { columns } from "./components/columns"
+import { FloatingChat } from "./components/floating-chat"
 
 
 
@@ -63,6 +64,7 @@ export default async function TaskPage() {
         </div>
         <DataTable data={tasks} columns={columns} />
       </div>
+      <FloatingChat />
     </>
   )
 }
